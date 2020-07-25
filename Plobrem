@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace First_console_app
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool passwordte;
+            string passwordcorrect;
+            string password = ("12345678");
+            Console.Write("Enter your name: ");
+            string name = Console.ReadLine();
+            Console.Write("Enter your password: ");
+            string userpassword = (Console.ReadLine());
+            if (string.Equals(password, userpassword))
+            {
+                passwordte = true;
+            } else
+            {
+                passwordte = false;
+            }
+            if (passwordte = true)
+            {
+                Console.WriteLine("Correct");
+            } else
+            {
+                Console.WriteLine("Try again");
+                System.Threading.Thread.Sleep(2000);//wait
+                
+            }
+            Console.WriteLine("Hello " + name);
+            Console.WriteLine("Let's find the sum of two numbers");
+            System.Threading.Thread.Sleep(2000);//Wait
+            Console.WriteLine("Give me two numbers");
+            System.Threading.Thread.Sleep(2000);//Wait
+            Console.Write("Give first number: ");
+            double num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Give second number: ");
+            double num2 = Convert.ToInt32(Console.ReadLine());
+            double sum = num1 + num2;
+            Console.WriteLine("Sum: " + sum);
+            Console.ReadLine();
+        }
+    }
+ }
